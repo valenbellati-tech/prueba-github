@@ -59,7 +59,7 @@ footer{
 .persona{
     flex:0 0 25%; /* cada perdona ocupa unm espacio fijo de 25% del contenedor padre*/
     display:flex;/*para centrar el contenido de cada persona*/
-    flex-direction: column;/*para organizar el contenido de cada persona en columna*/|
+    flex-direction: column;/*para organizar el contenido de cada persona en columna*/
     align-items: center;/*para centrar el contenido de cada persona*/
     justify-content: center;
 
