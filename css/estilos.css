@@ -36,7 +36,7 @@ footer{
 /* ESTILOS PARA LOS ARTICLES PERSONA*/
 .nosotros{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;/*para que los articulos se ajusten al ancho del contenedor padre*/
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -45,13 +45,35 @@ footer{
 }
 
 .staff{
-    width: 100% ;
-    flex: 0 0 300px;
+    width: 100% ;/*cada articulo ocupa el 100% del ancho del contenedor padre*/
+    flex: 0 0 300px;/*cada articulo ocupa un espacio fijo de 300px del contenedor padre*/
     background-color: #f4f4f4;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
+    margin: 10px;/*espacio entre cada articulo*/
+    padding: 20px;/*espacio interno del articulo*/
+    border-radius: 5px;/*redondeo del articulo*/
+    text-align: center;/*centrar el texto del articulo*/
+    display: flex;/*para centrar el contenido del articulo*/
+    justify-content: space-around;/*espacio entre el contenido del articulo*/
+}
+
+.persona{
+    flex:0 0 25%; /* cada perdona ocupa unm espacio fijo de 25% del contenedor padre*/
+    display:flex;/*para centrar el contenido de cada persona*/
+    flex-direction: column;/*para organizar el contenido de cada persona en columna*/|
+    align-items: center;/*para centrar el contenido de cada persona*/
+    justify-content: center;
+
+    border:solid 1px #240808;/*borde contenedor persona*/
+    border-radius: 5px;/*redondeo del contenedor persona*/
+}
+ .foto{
+    width: 80px;
+    height: 80px;/*la altura es fija*/
+    border-radius: 50%;
+    
+    background-color: steelblue;
+    margin-bottom: 3em;/*espacio entre la foto y el nombre de la persona*/
+ }
+
+
 }
